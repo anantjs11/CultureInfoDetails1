@@ -1,0 +1,39 @@
+name: "CultureInfo Build"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  AZURE_WEBAPP_NAME: culture-info-details
+  AZURE_WEBAPP_PACKAGE_PATH: './published'
+  NET_VERSION: '5.0'
+jobs:
+  build:
+    name: "CultureInfo Build"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .Net Core SDK ${{env.NET_VERSION}}
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{env.NET_VERSION}}
+    
+    - name: Restore
+      run: dotnet Restore
+
+    - name: Build
+      run: dotnet build --no-restore -c Release
+
+    - name: Publish app for deploy
+      run: dotnet publish --no-build -c Release -o ${{env.AZURE_WEBAPP_PACKAGE_PATH}}
+
+    - name: Deploy to Azure Web APP
+      uses: azure/webapp-deploy@v2
+      with:
+        app-name: ${{env.AZURE_WEBAPP_NAME}}
+        publish-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
+        package: ${{env.AZURE_WEBAPP_PACKAGE_PATH}}
