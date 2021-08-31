@@ -85,7 +85,6 @@ C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\bin\Debug\net5.0\
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.csproj.AssemblyReference.cache
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.AssemblyInfoInputs.cache
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.AssemblyInfo.cs
@@ -99,6 +98,7 @@ C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.TagHelpers.input.cache
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.TagHelpers.output.cache
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.RazorCoreGenerate.cache
+C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\Razor\Views\Home\CultureDetails.cshtml.g.cs
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -114,4 +114,3 @@ C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\ref\CultureInfoDetails1.dll
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.pdb
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.genruntimeconfig.cache
-C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\Razor\Views\Home\CultureDetails.cshtml.g.cs
