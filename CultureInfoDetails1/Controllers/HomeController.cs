@@ -53,6 +53,38 @@ namespace CultureInfoDetails1.Controllers
                 };
                 cultures.Add(cultureSpec);
             }
+            ViewBag.searchCode = "";
+            return View(cultures);
+
+        }
+
+        [HttpPost]
+        public IActionResult CultureDetails(string searchCode)
+        {
+            var cultures = new List<CultureSpecification>();
+            IEnumerable<CultureInfo> allCultures = new List<CultureInfo>();
+            if (!string.IsNullOrEmpty(searchCode))
+            {
+                allCultures = CultureInfo.GetCultures(CultureTypes.AllCultures & ~CultureTypes.NeutralCultures).ToList().Where(a => a.Name.ToLower().Contains(searchCode.ToLower()));
+            }
+            else { 
+                allCultures = CultureInfo.GetCultures(CultureTypes.AllCultures & ~CultureTypes.NeutralCultures).ToList();
+            }
+            foreach (var culture in allCultures)
+            {
+                var cultureSpec = new CultureSpecification
+                {
+                    CultureCode = culture.Name,
+                    Name = culture.DisplayName,
+                    DecimalSeparator = culture.NumberFormat.CurrencyDecimalSeparator,
+                    GroupSeparator = culture.NumberFormat.CurrencyGroupSeparator,
+                    DisplayName = culture.DisplayName,
+                    DecimalSeparatorUnicode = culture.NumberFormat.CurrencyDecimalSeparator.Select(t => $"\\u{Convert.ToUInt16(t):X4} ").FirstOrDefault(),
+                    GroupSeparatorUnicode = culture.NumberFormat.CurrencyGroupSeparator.Select(t => $"\\u{Convert.ToUInt16(t):X4} ").FirstOrDefault()
+                };
+                cultures.Add(cultureSpec);
+            }
+            ViewBag.searchCode = searchCode;
             return View(cultures);
 
         }

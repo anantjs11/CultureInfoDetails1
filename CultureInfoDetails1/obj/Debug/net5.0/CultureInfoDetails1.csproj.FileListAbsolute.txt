@@ -114,3 +114,4 @@ C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\ref\CultureInfoDetails1.dll
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.pdb
 C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.genruntimeconfig.cache
+C:\Anant Joshi\samples\CultureInfoDetails1\CultureInfoDetails1\obj\Debug\net5.0\CultureInfoDetails1.csproj.AssemblyReference.cache
