@@ -1,6 +1,6 @@
 name: "CultureInfo Build"
 
-on: [push, workflow-dispatch]
+on: [push]
 
 env:
   AZURE_WEBAPP_NAME: culture-info-details
