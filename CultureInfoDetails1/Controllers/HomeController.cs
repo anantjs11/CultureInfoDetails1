@@ -39,7 +39,7 @@ namespace CultureInfoDetails1.Controllers
         public IActionResult CultureDetails()
         {
             var cultures = new List<CultureSpecification>();
-            var allCultures = CultureInfo.GetCultures(CultureTypes.AllCultures & ~CultureTypes.NeutralCultures).ToList();
+            var allCultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures).ToList();
             foreach (var culture in allCultures)
             {
                 var cultureSpec = new CultureSpecification { 
